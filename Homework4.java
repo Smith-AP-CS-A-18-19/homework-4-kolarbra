@@ -47,14 +47,14 @@ public class Homework4 {
 
 		Homework4 hw4 = new Homework4("Hello, World!", 5);
 
-		if (hw4.multiply(2.5) == 12.25) {
+		if (hw4.multiply(2.5) == 12) {
 			System.out.println("Pass 1");
 		} else {
 			System.out.println("Fail 1");
 			exitCode += 1;
 		}
 
-		if (hw4.sumProduct(2, 2.5) == 20.25) {
+		if (hw4.sumProduct(2, 2.5) == 22.5) {
 			System.out.println("Pass 2");
 		} else {
 			System.out.println("Fail 2");
@@ -75,7 +75,7 @@ public class Homework4 {
 			exitCode += 1;
 		}
 
-		if (hw4.concat("Goodbye!").equals("Hello World! Goodbye!")) {
+		if (hw4.concat("Goodbye!").equals("Hello, World! Goodbye!")) {
 			System.out.println("Pass 5");
 		} else {
 			System.out.println("Fail 5");
