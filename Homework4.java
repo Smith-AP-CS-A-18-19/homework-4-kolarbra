@@ -1,10 +1,14 @@
 public class Homework4 {
 
+private int num;
+private String string;
+
 	/* Finish the constructor and create any necessary instance
 	 * variables
 	 */
 	public Homework4(String s, int i) {
-
+		string = s;
+		num = i;
 	}
 
 	/* Return the product of the stored number and the
@@ -12,34 +16,37 @@ public class Homework4 {
 	 * multiplication
 	 */
 	public int multiply(double d) {
-
+		double result = d * num;
+		return (int) result;
 	}
 
 	/* Add the two provided numbers, and then multiply the
 	 * product by the stored number
 	 */
 	public double sumProduct(int a, double b) {
-
+		double sum = a + b;
+		double result = sum * num;
+		return result;
 	}
 
 	/* Return the remainder of the first number divided by
 	 * the integer portion of the provided double
 	 */
 	 public int remainder(double d) {
-
+		 return num % (int) d;
 	}
 
 	/* Return the length of the stored String
 	 */
 	public int getLength() {
-
+		return string.length();
 	}
 
 	/* Return the stored String followed by the provided
 	 * String. Put a space between the two Strings
 	 */
 	public String concat(String s) {
-
+		return string + " " + s;
 	}
 
 	public static void main(String[] args) {
